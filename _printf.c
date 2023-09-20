@@ -78,7 +78,7 @@ int _printf(const char *format, ...)
 				case 'l':
 				{
 				int intArg1 = va_arg(var_args, int);
-				int intStrLen2 = snprintf(NULL, 0, "%d"i, intArg1);
+				int intStrLen2 = snprintf(NULL, 0, "%d", intArg1);
 				char *intStr1 = malloc(intStrLen2 + 1);
 
 				if (intStr1 == NULL)

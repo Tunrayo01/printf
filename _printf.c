@@ -75,7 +75,7 @@ int _printf(const char *format, ...)
 				break;
 				}
 				case 'd':
-				case 'l':
+				case 'i':
 				{
 				int intArg1 = va_arg(var_args, int);
 				int intStrLen2 = snprintf(NULL, 0, "%d", intArg1);
